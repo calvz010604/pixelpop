@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPop Photobooth</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gif.js/dist/gif.js"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+
+    <h1>PixelPop Photobooth</h1>
+
+    <div class="background">
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button onclick="capturePhoto()">Capture Photo</button>
+        <button onclick="startGIF()">Record GIF</button>
+        <button onclick="downloadPhoto()">Download Photo</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="applyFilter('grayscale(100%)')">Grayscale</button>
+        <button onclick="applyFilter('sepia(100%)')">Sepia</button>
+        <button onclick="applyFilter('brightness(150%)')">Brighten</button>
+    </div>
+
+    <!-- Stickers -->
+    <div class="stickers">
+        <button onclick="triggerStickerUpload()">Add Sticker</button>
+    </div>
+
+    
+    <!-- Social Media Sharing -->
+    <div class="social">
+        <button onclick="shareGIF()">Share on Twitter</button>
+        <button onclick="shareFacebook()">Share on Facebook</button>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* General Styling */
+body {  
+    text-align: center;  
+    font-family: Arial, sans-serif;  
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    color: white;
+}
+
+/* Photobooth Container */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure Video Element is Visible */
+#video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.buttons, .filters, .stickers, .social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
